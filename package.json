@@ -1,0 +1,20 @@
+{
+  "name": "@diot/iot-plugin",
+  "version": "0.1.0",
+  "description": "Diot: IoT firmware vulnerability analysis plugin for Agnes Harness",
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": "./index.mjs",
+  "private": true,
+  "agnes": {
+    "plugins": [
+      {
+        "export": "iotPlugin",
+        "id": "ext:diot/iot-plugin",
+        "inject": [
+          "extension"
+        ]
+      }
+    ]
+  }
+}
